@@ -34,9 +34,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     {
         public void Build()
         {
-            Console.WriteLine("-----------------------------------------------------------------------------------");
             Console.WriteLine("                                  SECOND PART                                      ");
-            Console.WriteLine("-----------------------------------------------------------------------------------");
 
             //
             //object declare
