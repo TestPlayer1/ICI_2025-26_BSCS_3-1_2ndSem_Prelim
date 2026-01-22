@@ -69,7 +69,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             student2.StudentName = "Maria Clara";
             student2.FavoriteFilipinoHero = "Andres Bonifacio";
 
-            Console.WriteLine("After modifying student2:\n");
+            Console.WriteLine("-----After modifying student2-----\n");
 
             Console.WriteLine(
                 $"Student 1 Details:\n" +
