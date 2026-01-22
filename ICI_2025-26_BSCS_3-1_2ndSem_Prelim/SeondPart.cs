@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using static ICI_2025_26_BSCS_3_1_2ndSem_Prelim.SeondPart;
 
 namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
@@ -32,11 +34,39 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
     internal class SeondPart
     {
-        public void Build()
-        {
-            Console.WriteLine("SECOND PART");
+          class Student() {
 
-            //Put your code here
+            public string StudentNumber;
+            public string StudentName;
+            public string Course;
+            public int YearLevel;
+            public int Section;
+            public string FavoriteFilipinoHero;
+        }
+        
+            public void Build()
+            {
+                Console.WriteLine("SECOND PART");
+                
+                 Student student1 = new Student();
+                    student1.StudentNumber = "20230553";
+                    student1.StudentName = "rea";
+                    student1.Course = "BSCS";
+                    student1.YearLevel = 3;
+                    student1.Section = 1;
+                    student1.FavoriteFilipinoHero = "Jose Rizal";
+                    Console.WriteLine("Student Name: " +  student1.StudentName);
+                    Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+
+                    Student student2 = student1;
+                    student2.StudentName = "rose";
+                    student2.FavoriteFilipinoHero = "Andres Bonifacio";
+            Console.WriteLine("Student Name: " + student2.StudentName);
+            Console.WriteLine("Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
+
+
+
+
+        }
         }
     }
-}
