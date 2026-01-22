@@ -62,7 +62,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
 
-        // TODO 5: Write the ApplyDamage method. 
+        // TODO 5: Write the ApplyDamage method. sdfsdf
         // It should take (HeroClass h, MinionStruct m) as parameters.
         // It should subtract 10 from the Health of both.
         // ____________________
