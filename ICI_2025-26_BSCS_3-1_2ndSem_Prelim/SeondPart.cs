@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,13 +30,72 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     
     */
 
+    //Student Class
+    public class Student
+    {
+        public string StudentNumber;
+        public string Name;
+        public string Course;
+        public int YearLevel;
+        public int Section;
+        public string favoriteFilipinoHero;
+    }
+
     internal class SeondPart
     {
         public void Build()
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            //Student 1 Initialization
+            Student student1 = new Student();
+            student1.StudentNumber = "0317";
+            student1.Name = "Kyle Renyer";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 1;
+            student1.favoriteFilipinoHero = "Heneral Luna";
+
+            //Student 1 Info
+            Console.WriteLine("STUDENT 1 INFO:");
+            Console.WriteLine("Student Student Num: " + student1.StudentNumber);
+            Console.WriteLine("Student Name: " + student1.Name);
+            Console.WriteLine("Student Course: " + student1.Course);
+            Console.WriteLine("Student YearLevel: " + student1.YearLevel);
+            Console.WriteLine("Student Section: " + student1.Section);
+            Console.WriteLine("Student Favorite Hero: " + student1.favoriteFilipinoHero);
+
+            //Student 2 Initialization
+            Student student2 = new Student();
+           
+            //Assigning Value
+            student2 = student1;
+
+            //Change Values of Student 2
+            student2.Name = "Trixie";
+            student2.favoriteFilipinoHero = "Jose Rizal";
+
+            //Print student 1
+            Console.WriteLine("");
+            Console.WriteLine("Some Value Changes:");
+            Console.WriteLine("Student 1 info:");
+            printInfo(student1);
+
+            //Print student 2
+            Console.WriteLine("");
+            Console.WriteLine("Student 2 info:");
+            printInfo(student2);
+
+        }
+
+        public static void printInfo(Student student)
+        {
+            Console.WriteLine("Student Student Num: " + student.StudentNumber);
+            Console.WriteLine("Student Name: " + student.Name);
+            Console.WriteLine("Student Course: " + student.Course);
+            Console.WriteLine("Student YearLevel: " + student.YearLevel);
+            Console.WriteLine("Student Section: " + student.Section);
+            Console.WriteLine("Student Favorite Hero: " + student.favoriteFilipinoHero);
         }
     }
 }
