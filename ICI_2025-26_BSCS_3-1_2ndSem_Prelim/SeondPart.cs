@@ -37,7 +37,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
- 
+
             Student student1 = new Student();
 
             Console.WriteLine("STUDENT 1: ");
@@ -48,10 +48,10 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             student1.Section = 1;
             student1.FavoriteFilipinoHero = "Jose Rizal";
 
-   
+
             Print(student1);
 
-  
+
             Student student2 = new Student();
 
             student1 = student2;
@@ -59,10 +59,10 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             student2.Name = "KYRIE";
             student2.FavoriteFilipinoHero = "LEBRON";
 
-        
+
             Console.WriteLine("STUDENT 1 : ");
             Print(student1);
-            
+
             Console.WriteLine("STUDENT 2 : ");
             Print(student2);
 
@@ -71,19 +71,14 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         private static void Print(Student student)
         {
-     
-            Console.WriteLine("Student NUMBER. : " + student.StudentNumber);
             Console.WriteLine("Student Name : " + student.Name);
-            Console.WriteLine("Student Course : " + student.Course);
-            Console.WriteLine("Student Year Level : " + student.YearLevel);
-            Console.WriteLine("Student Section: " + student.Section);
             Console.WriteLine("Favorite Filipino Hero : " + student.FavoriteFilipinoHero);
 
         }
 
         public class Student
         {
- 
+
             public string StudentNumber;
             public string Name;
             public string Course;
