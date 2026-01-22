@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,19 +47,19 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         public void Build()
         {
-            // TODO 3: Create instances of both and set Health to 100
-            HeroClass myHero = new HeroClass();
-            myHero.Health = 100;
+            //// TODO 3: Create instances of both and set Health to 100
+            //HeroClass myHero = new HeroClass();
+            //myHero.Health = 100;
 
-            MinionStruct myMinion = new MinionStruct();
-            myMinion.Health = 100;
+            //MinionStruct myMinion = new MinionStruct();
+            //myMinion.Health = 100;
 
-            Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            //Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
 
-            // TODO 4: Call ApplyDamage here
-            // ____________________
+            //// TODO 4: Call ApplyDamage here
+            //// ____________________
 
-            Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            //Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
 
         // TODO 5: Write the ApplyDamage method. 
@@ -67,4 +67,34 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         // It should subtract 10 from the Health of both.
         // ____________________
     }
+
+    public class HeroClass
+    {
+        public int Health;
+    }
+    public struct MinionStruct
+    {
+        public int Health;
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            HeroClass myHero = new HeroClass();
+            myHero.Health = 100;
+
+
+
+            MinionStruct myMinionStruct = new MinionStruct();
+            myMinionStruct.Health = 100;
+
+
+            Console.WriteLine("");
+            Console.WriteLine("Hero Health:   {myHero.Health}");
+            Console.WriteLine("Hero Health:   {myMinion.Health}");
+
+            //ApplyDamage(myHero, myMinionStruct);
+        }
+    }
 }
+
