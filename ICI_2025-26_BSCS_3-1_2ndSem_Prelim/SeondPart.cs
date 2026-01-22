@@ -37,7 +37,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
-            //Student 1 initialization
+ 
             Student student1 = new Student();
 
             Console.WriteLine("STUDENT 1: ");
