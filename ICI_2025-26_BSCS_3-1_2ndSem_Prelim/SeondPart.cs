@@ -44,7 +44,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
 
             student1 = new Student();
-            student1.Studentname = "wilson";
+            student1.Studentname = " john wilson cahawigan";
             student1.favoritefilipinohero = "rizal";
 
 
