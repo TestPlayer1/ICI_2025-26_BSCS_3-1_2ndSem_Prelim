@@ -15,7 +15,7 @@
 
             Console.WriteLine("--------------------------------------------------");
 
-            new SeondPart().Build();
+            new SecondPart().Build();
 
             Console.WriteLine("--------------------------------------------------");
 
