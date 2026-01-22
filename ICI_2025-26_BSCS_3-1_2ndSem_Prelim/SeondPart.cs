@@ -41,12 +41,12 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Student student1 = new Student();
 
             Console.WriteLine("STUDENT 1: ");
-            student1.StudentNumber = "001";
-            student1.Name = "rassid";
+            student1.StudentNumber = "2023-0707";
+            student1.Name = "rassid serohijos";
             student1.Course = "BSCS";
             student1.YearLevel = 3;
             student1.Section = 1;
-            student1.FavoriteFilipinoHero = "Jose Rizal";
+            student1.FavoriteFilipinoHero = "Apolinario Mabini";
 
 
             Print(student1);
@@ -75,6 +75,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("Favorite Filipino Hero : " + student.FavoriteFilipinoHero);
             Console.WriteLine("Student Num : " + student.StudentNumber);
             Console.WriteLine("Student Course : " + student.Course);
+            Console.WriteLine("Student Year : " + student.YearLevel);
         }
 
         public class Student
