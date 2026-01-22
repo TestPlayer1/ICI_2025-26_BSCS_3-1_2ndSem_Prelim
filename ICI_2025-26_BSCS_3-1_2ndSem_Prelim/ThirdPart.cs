@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,21 +45,35 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         // TODO 2: Create a Struct named 'MinionStruct' with a public int Health
         // ____________________
-
+        public struct MinionStruct
+        {
+            internal int Health;
+        }
+        public class HeroClass
+        {
+            internal int Health;
+        }
 
         public void Build()
         {
+
             // TODO 3: Create instances of both and set Health to 100
             HeroClass myHero = new HeroClass();
             myHero.Health = 100;
+
 
             MinionStruct myMinion = new MinionStruct();
             myMinion.Health = 100;
 
             Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
 
+
             // TODO 4: Call ApplyDamage here
             // ____________________
+
+            ApplyDamage(myHero, myMinion);
+               
+
 
             Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
@@ -66,5 +82,11 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         // It should take (HeroClass h, MinionStruct m) as parameters.
         // It should subtract 10 from the Health of both.
         // ____________________
-    }
+    
+        public void ApplyDamage(HeroClass h, MinionStruct m)
+        {
+           m.Health -=10;
+           h.Health -=10;
+        }
+    } 
 }
