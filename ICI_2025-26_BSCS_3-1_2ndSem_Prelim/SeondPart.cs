@@ -73,7 +73,8 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("Student Name : " + student.Name);
             Console.WriteLine("Favorite Filipino Hero : " + student.FavoriteFilipinoHero);
-
+            Console.WriteLine("Student Num : " + student.StudentNumber);
+            Console.WriteLine("Student Course : " + student.Course);
         }
 
         public class Student
