@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,11 +33,45 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
     internal class SeondPart
     {
+
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
 
-            //Put your code here
+;
+
+            Student student1;
+            Student student2;
+
+
+            student1 = new Student();
+            student1.Studentname = "wilson";
+            student1.favoritefilipinohero = "rizal";
+
+
+
+            student2 = student1;
+
+            Console.WriteLine(student1.Studentname);
+            Console.WriteLine(student1.favoritefilipinohero);
+
+            Console.ReadKey();
         }
+        public class Student
+        {
+
+            public string Studentnumber;
+            public string Studentname;
+            public string course;
+            public int yearlevel;
+            public int section;
+            public string favoritefilipinohero;
+
+        }
+
+
+
+
+
+
     }
 }
