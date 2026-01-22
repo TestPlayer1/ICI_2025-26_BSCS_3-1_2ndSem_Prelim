@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +36,43 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
-        }
+            static void Main(StringSplitOptions[] args)
+            {
+                Student student1;
+                Student student2;
+                Student Student3;
+
+                student1= new Student();
+                student1.Student Number = "2023-0848-IC";
+                student1.YearLevel = "2023-2025";
+                student1.section = "BSCS 3-1";
+                student1.FavoriteFilipinoHero = "ANTONIO LUNA";
+
+
+                student2 = student1;
+                //PRINT
+                Console.WriteLine('student 1 Name ')
+
+
+
+
+
+
+            }
+
+
+
+        public string Studentnumber { get; set; }
+
+        public string StudentName { get; set; }
+
+        public string YearLevel { get; set; }
+
+        public string Section { get; set; }
+
+        public string FavoriteFilipinoHero { get; set; }
+         
+
     }
 }
+
