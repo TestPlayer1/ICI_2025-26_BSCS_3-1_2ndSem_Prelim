@@ -58,21 +58,21 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
             StudentPrint(student1);
 
-            Console.WriteLine("Student2: " + student2.studNum);
-            Console.WriteLine("Student2: " + student2.studName);
-            Console.WriteLine("Student2: " + student2.course);
-            Console.WriteLine("Student2: " + student2.yearLevel);
-            Console.WriteLine("Student2: " + student2.section);
-            Console.WriteLine("Student2: " + student2.favFilipinoHero);
+            Console.WriteLine("Student2 Number: " + student2.studNum);
+            Console.WriteLine("Student2 Name: " + student2.studName);
+            Console.WriteLine("Student2 Course: " + student2.course);
+            Console.WriteLine("Student2: Year Level" + student2.yearLevel);
+            Console.WriteLine("Student2 Section: " + student2.section);
+            Console.WriteLine("Student2 Favorite Filipino Hero: " + student2.favFilipinoHero);
         }
         private void StudentPrint(Student student1)
         {
-            Console.WriteLine("Student1: " + student1.studNum);
-            Console.WriteLine("Student1: " + student1.studName);
-            Console.WriteLine("Student1: " + student1.course);
-            Console.WriteLine("Student1: " + student1.yearLevel);
-            Console.WriteLine("Student1: " + student1.section);
-            Console.WriteLine("Student1: " + student1.favFilipinoHero);
+            Console.WriteLine("Student1 Number: " + student1.studNum);
+            Console.WriteLine("Student1 Name: " + student1.studName);
+            Console.WriteLine("Student1 Course: " + student1.course);
+            Console.WriteLine("Student1 Year Level: " + student1.yearLevel);
+            Console.WriteLine("Student1 Section: " + student1.section);
+            Console.WriteLine("Student1 Favorite Filipino Hero: " + student1.favFilipinoHero);
             Console.WriteLine();
         }
         public class Student
