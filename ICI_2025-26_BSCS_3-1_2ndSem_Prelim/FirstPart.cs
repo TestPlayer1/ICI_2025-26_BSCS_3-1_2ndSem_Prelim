@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,29 +12,29 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         /*
         INSTRUCTION:
-        PRINT THE DEFINITION OF THE FOLLOWING CONCEPT OF OOP. YOU CAN GET THE DEFINITION FROM THE COMMENTED LINES BELOW
+        PRINT THE DEFINITION OF THE FOLLOWING CONCEPT OF OOP. YOU CAN GET THE DEFINITION FROM THE COMMENTED LINES BELOW cabd
         */
 
         public FirstPart()
         {
             Console.WriteLine("FIRST PART");
             Console.WriteLine("Encapsulation");
-            Console.WriteLine("Description 1");
+            Console.WriteLine("Bundling data (variables) and methods together into a single unit and restricting direct access to some of an object's components.");
             Console.WriteLine();
 
 
             Console.WriteLine("Polymorphism");
-            Console.WriteLine("Description 1");
+            Console.WriteLine("The ability of an object to take on many forms, allowing the same method to behave differently based on the object calling it.");
             Console.WriteLine();
 
 
             Console.WriteLine("Inheritance");
-            Console.WriteLine("Description 1");
+            Console.WriteLine("The mechanism where a new class derives properties and behaviors from an existing parent class to promote code reuse.");
             Console.WriteLine();
 
 
             Console.WriteLine("Abstraction");
-            Console.WriteLine("Description 1");
+            Console.WriteLine("Hiding complex implementation details and showing only the essential features of the object to the user.");
             Console.WriteLine();
         }
 
