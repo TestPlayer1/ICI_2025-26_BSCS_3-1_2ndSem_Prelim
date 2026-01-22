@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ICI_2025_26_BSCS_3_1_2ndSem_Prelim.SeondPart;
 
 namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
@@ -37,6 +38,52 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("SECOND PART");
 
             //Put your code here
+            Student student1 = new Student();
+
+            student1.studNum = "2023-0464-IC";
+            student1.studName = "Shaun Gatchalian";
+            student1.course = "BSCS";
+            student1.yearLevel = 3;
+            student1.section = 1;
+            student1.favFilipinoHero = "Andres Bonifacio";
+
+            StudentPrint(student1);
+            
+            Student student2 = new Student();
+
+            student2 = student1;
+
+            student2.studName = "Saeko Busujima";
+            student2.favFilipinoHero = "Jose Rizal";
+
+            StudentPrint(student1);
+
+            Console.WriteLine("Student2: " + student2.studNum);
+            Console.WriteLine("Student2: " + student2.studName);
+            Console.WriteLine("Student2: " + student2.course);
+            Console.WriteLine("Student2: " + student2.yearLevel);
+            Console.WriteLine("Student2: " + student2.section);
+            Console.WriteLine("Student2: " + student2.favFilipinoHero);
+        }
+        private void StudentPrint(Student student1)
+        {
+            Console.WriteLine("Student1: " + student1.studNum);
+            Console.WriteLine("Student1: " + student1.studName);
+            Console.WriteLine("Student1: " + student1.course);
+            Console.WriteLine("Student1: " + student1.yearLevel);
+            Console.WriteLine("Student1: " + student1.section);
+            Console.WriteLine("Student1: " + student1.favFilipinoHero);
+            Console.WriteLine();
+        }
+        public class Student
+        {
+            public string studNum;
+            public string studName;
+            public string course;
+            public int yearLevel;
+            public int section;
+            public string favFilipinoHero;
+
         }
     }
 }
