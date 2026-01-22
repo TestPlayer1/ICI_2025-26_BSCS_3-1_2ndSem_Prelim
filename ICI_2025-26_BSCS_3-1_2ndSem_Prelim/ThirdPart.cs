@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,24 +47,43 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         public void Build()
         {
-            // TODO 3: Create instances of both and set Health to 100
-            HeroClass myHero = new HeroClass();
-            myHero.Health = 100;
+            //    // TODO 3: Create instances of both and set Health to 100
+            //    HeroClass myHero = new HeroClass();
+            //    myHero.Health = 100;
 
-            MinionStruct myMinion = new MinionStruct();
-            myMinion.Health = 100;
+            //    MinionStruct myMinion = new MinionStruct();
+            //    myMinion.Health = 100;
 
-            Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            //    Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
 
-            // TODO 4: Call ApplyDamage here
+            //    // TODO 4: Call ApplyDamage here
+            //    // ____________________
+
+            //    Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            //}
+
+            // TODO 5: Write the ApplyDamage method. 
+            // It should take (HeroClass h, MinionStruct m) as parameters.
+            // It should subtract 10 from the Health of both.
             // ____________________
-
-            Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
+        public class Heroclass
+        {
 
-        // TODO 5: Write the ApplyDamage method. 
-        // It should take (HeroClass h, MinionStruct m) as parameters.
-        // It should subtract 10 from the Health of both.
-        // ____________________
+        }
+        public struct Mainstruct
+        {
+            public int Health;
+        }
+        class program
+        {
+            private static object myhero;
+
+            static void Main(string[] args)
+            {
+                Heroclass heroclass = new Heroclass();
+                myhero.Health = 100;
+            }
+        }
     }
 }
