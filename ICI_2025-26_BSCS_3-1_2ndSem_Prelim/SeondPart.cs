@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
@@ -35,8 +37,38 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         public void Build()
         {
             Console.WriteLine("SECOND PART");
+            Student student1 = new Student();
+            Student student2 = new Student();
 
-            //Put your code here
+            student1 = new Student();
+            student1.StudentNumber = "2023-1501-IC";
+            student1.StudentName = "Rimuru Lee";
+            student1.Course = "BSIS";
+            student1.YearLevel = 1;
+            student1.Section = 1;
+            student1.FavFilHero = "ANTONIO LUNA";
+
+            Console.WriteLine($"Student{student1.StudentNumber}");
+            Console.WriteLine($"Student{student1.StudentNumber}");
         }
+        public class Student
+        {
+
+            public string StudentNumber { get; set; }
+            public string StudentName { get; set; }
+
+            public string  Course { get; set; }
+            public int YearLevel { get; set; }
+            public int Section {  get; set; }
+            public string FavFilHero { get; set; }
+
+
+         
+            
+        }    
+      
     }
+
 }
+
+
