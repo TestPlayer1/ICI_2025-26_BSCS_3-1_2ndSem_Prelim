@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Buffers.Text;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -20,22 +23,22 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("FIRST PART");
             Console.WriteLine("Encapsulation");
             Console.WriteLine("Description 1");
-            Console.WriteLine();
+            Console.WriteLine("Bundling data(variables) and methods together into a single unit and restricting direct access to some of an object's components.");
 
 
             Console.WriteLine("Polymorphism");
             Console.WriteLine("Description 1");
-            Console.WriteLine();
+            Console.WriteLine("The ability of an object to take on many forms, allowing the same method to behave differently based on the object calling it.");
 
 
             Console.WriteLine("Inheritance");
             Console.WriteLine("Description 1");
-            Console.WriteLine();
+            Console.WriteLine("The mechanism where a new class derives properties and behaviors from an existing parent class to promote code reuse.");
 
 
             Console.WriteLine("Abstraction");
             Console.WriteLine("Description 1");
-            Console.WriteLine();
+            Console.WriteLine("Hiding complex implementation details and showing only the essential features of the object to the user.");
         }
 
 

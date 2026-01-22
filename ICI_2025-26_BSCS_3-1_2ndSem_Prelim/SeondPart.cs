@@ -34,9 +34,51 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     {
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
+            Console.WriteLine("SECOND PART\n");
 
-            //Put your code here
+            Student student1 = new Student();                                   // Details
+            student1.StudentNumber = "2023-0175-IC";
+            student1.StudentName = "Quine, Mark Rainer Dion DG.";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 1;
+            student1.FavoriteFilipinoHero = "Andres Bonifacio";
+
+            Console.WriteLine("Student 1 Details:");                           // Student 1 Details 
+            PrintStudent(student1);
+
+            Student student2 = student1;  
+
+            student2.StudentName = "Kobe";                                     // Student 2 Details
+            student2.FavoriteFilipinoHero = "Juan Luna";                       
+
+            Console.WriteLine("\nStudent 1 Details After Changes:");
+            PrintStudent(student1);
+
+            Console.WriteLine("\nStudent 2 Details:");
+            PrintStudent(student2);
+        }
+
+        void PrintStudent(Student s)                                           // Print
+        {
+            Console.WriteLine($"Student Number: {s.StudentNumber}");
+            Console.WriteLine($"Student Name: {s.StudentName}");
+            Console.WriteLine($"Course: {s.Course}");
+            Console.WriteLine($"Year Level: {s.YearLevel}");
+            Console.WriteLine($"Section: {s.Section}");
+            Console.WriteLine($"Favorite Filipino Hero: {s.FavoriteFilipinoHero}");
+        }
+        class Student                                                          // Classes
+        {
+            public string StudentNumber;
+            public string StudentName;
+            public string Course;
+            public int YearLevel;
+            public int Section;
+            public string FavoriteFilipinoHero;
         }
     }
 }
+
+
+   
