@@ -62,8 +62,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         
             Console.WriteLine("STUDENT 1 : ");
             Print(student1);
-
-     
+            
             Console.WriteLine("STUDENT 2 : ");
             Print(student2);
 
@@ -78,8 +77,8 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("Student Course : " + student.Course);
             Console.WriteLine("Student Year Level : " + student.YearLevel);
             Console.WriteLine("Student Section: " + student.Section);
-            Console.WriteLine("Student Fav Filipino Hero : " + student.FavoriteFilipinoHero);
-            Console.WriteLine("__________________________________________");
+            Console.WriteLine("Favorite Filipino Hero : " + student.FavoriteFilipinoHero);
+
         }
 
         public class Student
