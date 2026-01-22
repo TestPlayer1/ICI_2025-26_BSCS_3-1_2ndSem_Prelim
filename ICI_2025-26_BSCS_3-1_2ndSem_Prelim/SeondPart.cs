@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ICI_2025_26_BSCS_3_1_2ndSem_Prelim.SeondPart;
 
 namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
@@ -36,7 +37,61 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            //Student 1 initialization
+            Student student1 = new Student();
+
+            Console.WriteLine("STUDENT 1: ");
+            student1.StudentNumber = "001";
+            student1.Name = "rassid";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 1;
+            student1.FavoriteFilipinoHero = "Jose Rizal";
+
+   
+            Print(student1);
+
+  
+            Student student2 = new Student();
+
+            student1 = student2;
+
+            student2.Name = "KYRIE";
+            student2.FavoriteFilipinoHero = "LEBRON";
+
+        
+            Console.WriteLine("STUDENT 1 : ");
+            Print(student1);
+
+     
+            Console.WriteLine("STUDENT 2 : ");
+            Print(student2);
+
+
         }
+
+        private static void Print(Student student)
+        {
+     
+            Console.WriteLine("Student NUMBER. : " + student.StudentNumber);
+            Console.WriteLine("Student Name : " + student.Name);
+            Console.WriteLine("Student Course : " + student.Course);
+            Console.WriteLine("Student Year Level : " + student.YearLevel);
+            Console.WriteLine("Student Section: " + student.Section);
+            Console.WriteLine("Student Fav Filipino Hero : " + student.FavoriteFilipinoHero);
+            Console.WriteLine("__________________________________________");
+        }
+
+        public class Student
+        {
+ 
+            public string StudentNumber;
+            public string Name;
+            public string Course;
+            public int YearLevel;
+            public int Section;
+            public string FavoriteFilipinoHero;
+        }
+
     }
 }
