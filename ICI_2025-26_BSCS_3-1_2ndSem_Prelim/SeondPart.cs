@@ -36,7 +36,60 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            Student student1;
+
+            student1 = new Student();
+            student1.StudentNumber = "2023-0549-IC";
+            student1.StudentName = "Mark Joseph A. Flores";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 1;
+            student1.FilipinoHero = "Gen. Antonio Luna";
+
+            Console.WriteLine("Student 1 Number: " + student1.StudentNumber);
+            Console.WriteLine("Student 1 Name: " + student1.StudentName);
+            Console.WriteLine("Student 1 Course: " + student1.Course);
+            Console.WriteLine("Student 1 Year Level: " + student1.YearLevel);
+            Console.WriteLine("Student 1 Section: " + student1.Section);
+            Console.WriteLine("Student 1 Filipino Hero: " + student1.FilipinoHero);
+            Console.WriteLine();
+
+            Student student2;
+
+            student2 = new Student();
+
+            student1 = student2;
+
+            student2.StudentName = "Vincent Josh G. Casuga";
+            student2.FilipinoHero = "Dr. Jose Rizal";
+
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("Student 1 Number: " + student1.StudentNumber);
+            Console.WriteLine("Student 1 Name: " + student1.StudentName);
+            Console.WriteLine("Student 1 Course: " + student1.Course);
+            Console.WriteLine("Student 1 Year Level: " + student1.YearLevel);
+            Console.WriteLine("Student 1 Section: " + student1.Section);
+            Console.WriteLine("Student 1 Filipino Hero: " + student1.FilipinoHero);
+            Console.WriteLine();
+
+            Console.WriteLine("Student 2 Number: " + student2.StudentNumber);
+            Console.WriteLine("Student 2 Name: " + student2.StudentName);
+            Console.WriteLine("Student 2 Course: " + student2.Course);
+            Console.WriteLine("Student 2 Year Level: " + student2.YearLevel);
+            Console.WriteLine("Student 2 Section: " + student2.Section);
+            Console.WriteLine("Student 2 Filipino Hero: " + student2.FilipinoHero);
+            Console.WriteLine();
         }
+    }
+
+    public class Student
+    {
+        public string StudentNumber;
+        public string StudentName;
+        public string Course;
+        public int YearLevel;
+        public int Section;
+        public string FilipinoHero;
     }
 }

@@ -40,9 +40,17 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         // TODO 1: Create a Class named 'HeroClass' with a public int Health
         // ____________________
+        public class HeroClass
+        {
+            public int Health;
+        }
 
         // TODO 2: Create a Struct named 'MinionStruct' with a public int Health
         // ____________________
+        public struct MinionStruct
+        {
+            public int Health;
+        }
 
 
         public void Build()
@@ -59,6 +67,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             // TODO 4: Call ApplyDamage here
             // ____________________
 
+            ApplyDamage(myHero, myMinion);
             Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
 
@@ -66,5 +75,10 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         // It should take (HeroClass h, MinionStruct m) as parameters.
         // It should subtract 10 from the Health of both.
         // ____________________
+        public void ApplyDamage(HeroClass h, MinionStruct m)
+        {
+            h.Health -= 10;
+            m.Health -= 10;
+        }
     }
 }
