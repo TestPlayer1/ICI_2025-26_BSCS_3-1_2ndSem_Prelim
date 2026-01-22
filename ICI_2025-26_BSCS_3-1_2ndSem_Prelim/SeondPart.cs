@@ -32,11 +32,53 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
     internal class SeondPart
     {
+        public class Student
+        {
+            public int StudentNumber;
+            public string? Name;
+            public string? Course;
+            public int YearLevel;
+            public int Section;
+            public string? FavoriteFilipinoLawyear;
+
+        }
         public void Build()
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+           Student student1 = new Student();
+            student1.StudentNumber = 0324;
+            student1.Name = "nugget";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 1;
+            student1.FavoriteFilipinoLawyear = "Doc.Jose Rizal ";
+            Console.WriteLine($"Student {student1.StudentNumber}");
+            Console.WriteLine($"Student {student1.Name}");
+            Console.WriteLine($"Student {student1.Course}");
+            Console.WriteLine($"Student {student1.YearLevel}");
+            Console.WriteLine($"Student {student1.Section}");
+            Console.WriteLine($"Student {student1.FavoriteFilipinoLawyear}");
+            Console.WriteLine("    ");
+
+            Student student2 = new Student();
+            student2.StudentNumber = 0324;
+            student2.Name = "midget";
+            student2.Course = "BSCS";
+            student2.YearLevel = 3;
+            student2.Section = 1;
+            student2.FavoriteFilipinoLawyear = "Melchora Aquino";
+
+            Console.WriteLine($"Student {student2.StudentNumber}");
+            Console.WriteLine($"Student {student2.Name}");
+            Console.WriteLine($"Student {student2.Course}");
+            Console.WriteLine($"Student {student2.YearLevel}");
+            Console.WriteLine($"Student {student2.Section}");
+            Console.WriteLine($"Student {student2.FavoriteFilipinoLawyear}");
+
+
+
         }
+
     }
 }
