@@ -1,4 +1,4 @@
-﻿namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
+namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
     internal class Program
     {
@@ -13,11 +13,11 @@
         {
             new FirstPart();
 
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("--------------------tapos na------------------------------");
 
             new SeondPart().Build();
 
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("----------------------tapos na----------------------------");
 
             new ThirdPart().Build();
 
