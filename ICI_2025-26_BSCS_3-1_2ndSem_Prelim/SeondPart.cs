@@ -38,10 +38,13 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         public void Build()
         {
             Console.WriteLine("SECOND PART");
+            Console.WriteLine(" ");
+            Console.WriteLine("First Output");
+            Console.WriteLine(" ");
 
 
             Student student1 = new Student();
-            Student student2 = new Student();
+           
 
             //Student 1 Values
 
@@ -52,7 +55,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             student1.Section = 1;
             student1.FavoriteFilipinoHero ="Heneral Luna";
 
-            student2 = student1;
+           
 
             // First Output
 
@@ -65,8 +68,15 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
             //Space
             Console.WriteLine(" ");
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Second Output");
             Console.WriteLine(" ");
+
+            Student student2 = new Student();
+            student2 = student1;
+
+
+            student1.StudentName = "Kiyoshi Kusakabe";
+            student1.FavoriteFilipinoHero = "Jose Rizal";
 
             // Second Output
             Console.WriteLine("Student Number: " + student1.StudentNumber);
@@ -75,35 +85,32 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("Year Level: " + student1.YearLevel);
             Console.WriteLine("Section: " + student1.Section);
             Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
-            Console.WriteLine("Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
+ 
 
             //Space
             Console.WriteLine(" ");
-            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Final Output");
             Console.WriteLine(" ");
 
             //Student 2 Intialization
 
-            student2.StudentName = "Kiyoshi Kusakabe";
-            student2.FavoriteFilipinoHero = "Jose Rizal";
-
             student1 = student2;    
 
-            // Third Output
+            // Final Output
             Console.WriteLine("Student Number: " + student1.StudentNumber);
             Console.WriteLine("Student Name: " + student1.StudentName);
             Console.WriteLine("Course: " + student1.Course);
             Console.WriteLine("Year Level: " + student1.YearLevel);
             Console.WriteLine("Section: " + student1.Section);
             Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
-            Console.WriteLine("Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
+ 
 
 
 
 
 
         }
-
+        
         public class Student() 
         {
             public string StudentNumber;
