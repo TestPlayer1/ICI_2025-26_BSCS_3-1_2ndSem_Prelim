@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,9 +34,51 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     {
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
+            Console.WriteLine("                                  SECOND PART                                      ");
 
-            //Put your code here
+            //
+            //object declare
+            Student student1 = new Student();
+
+
+            // student 1
+            student1.studentNumber = "2023-0067-IC";
+            student1.name = "Ragasa Kurt.";
+            student1.course = "BSCS";
+            student1.yearLevel = 3;
+            student1.section = 1;
+            student1.favoriteFilipinoHero = "Goyo";
+
+            //student 2
+            Student student2 = new Student();
+            student2 = student1;
+
+            Console.WriteLine("Student 1: " + student1.studentNumber + " " + student1.name + " " + student1.course + " " + student1.yearLevel + " - " + student1.section + " " + student1.favoriteFilipinoHero);
+            Console.WriteLine("Student 2: " + student2.studentNumber + " " + student2.name + " " + student2.course + " " + student2.yearLevel + " - " + student2.section + " " + student2.favoriteFilipinoHero);
+
+            // change value
+            Console.WriteLine("");
+            student2.name = "Bryan";
+            student2.favoriteFilipinoHero = "Andress Bonificio";
+            Console.WriteLine("Student 1: " + student1.studentNumber + " " + student1.name + " " + student1.course + " " + student1.yearLevel + " - " + student1.section + " " + student1.favoriteFilipinoHero);
+            Console.WriteLine("Student 2: " + student2.studentNumber + " " + student2.name + " " + student2.course + " " + student2.yearLevel + " - " + student2.section + " " + student2.favoriteFilipinoHero);
+
+
+
+
         }
+        //public class Stud
+
+    }
+   
+    // Class
+    public class Student
+    {
+        public string studentNumber;
+        public string name;
+        public string course;
+        public int yearLevel;
+        public int section;
+        public string favoriteFilipinoHero;
     }
 }
